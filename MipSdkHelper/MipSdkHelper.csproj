@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LoginResult.cs" />
-    <Compile Include="MipHelperClient.cs" />
+    <Compile Include="MipSdkClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

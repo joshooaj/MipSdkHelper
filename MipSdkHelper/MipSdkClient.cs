@@ -14,7 +14,7 @@ using IConfigurationService = ConfigApiSharp.ConfigurationApiService.IConfigurat
 
 namespace MipSdkHelper
 {
-    public class MipHelperClient : IDisposable
+    public class MipSdkClient : IDisposable
     {
         private readonly Uri _uri;
         private readonly Dictionary<Guid, Item> _recorderIdToItem = new Dictionary<Guid, Item>();
@@ -51,7 +51,7 @@ namespace MipSdkHelper
             }
         }
 
-        public MipHelperClient(Uri uri)
+        public MipSdkClient(Uri uri)
         {
             _uri = uri;
         }
