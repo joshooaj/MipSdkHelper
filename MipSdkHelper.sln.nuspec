@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>MipSdkHelper</id>
+		<version>1.0.0</version>
+		<authors>Josh Hendricks</authors>
+		<owners>Josh Hendricks</owners>
+		<licenseUrl>https://github.com/jhendricks123/MipSdkHelper/blob/master/LICENSE</licenseUrl>
+		<projectUrl>https://github.com/jhendricks123/MipSdkHelper</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Wrapper for handling Milestone MIP SDK login/logout, WCF proxy generation, and other common tasks</description>
+		<releaseNotes>Milestone MIP SDK binaries are not included in package. Sign up as a Milestone Solution Partner directly with Milestone Systems at no cost for access to the MIP SDK including documentation.</releaseNotes>
+		<copyright>Copyright 2018</copyright>
+		<tags>Milestone SDK MIP MIPSDK XProtect ConfigurationAPI ConfigAPI ServerCommandService</tags>
+		<dependencies>
+			<dependency id="ConfigApiSharp" version="1.1.0" />
+		</dependencies>
+	</metadata>
+</package>

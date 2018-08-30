@@ -195,12 +195,12 @@ namespace MipSdkHelper
                 var result = ServerCommandServiceClient.MarkedDataSearch(_loginSettings.Token, new Guid[] { }, null, null,
                     DateTime.MinValue, DateTime.UtcNow.AddSeconds(-10), DateTime.MinValue,
                     DateTime.MinValue, DateTime.MinValue, DateTime.MinValue, DateTime.MinValue, DateTime.MinValue,
-                    pageIndex, 100, SortOrderOption.RetentionExpireTime, false);
+                    pageIndex, 10, SortOrderOption.RetentionExpireTime, false);
                 foreach (var t in result)
                 {
                     yield return t;
                 }
-                if (result.Length >= 100)
+                if (result.Length >= 10)
                 {
                     pageIndex++;
                     continue;
