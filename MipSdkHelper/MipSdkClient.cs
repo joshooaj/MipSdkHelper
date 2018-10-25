@@ -58,7 +58,7 @@ namespace MipSdkHelper
 
         public async Task<LoginResult> LoginAsync(NetworkCredential nc = null)
         {
-            return await InitAndLogin(_uri, nc);
+            return await InitAndLogin(_uri, nc).ConfigureAwait(false);
         }
 
         public LoginResult Login(NetworkCredential nc = null)
@@ -74,7 +74,7 @@ namespace MipSdkHelper
 
             try
             {
-                await Task.Run(() => VideoOS.Platform.SDK.Environment.Login(uri));
+                await Task.Run(() => VideoOS.Platform.SDK.Environment.Login(uri)).ConfigureAwait(false);
             }
             catch (VideoOS.Platform.SDK.Platform.InvalidCredentialsMIPException ex)
             {
